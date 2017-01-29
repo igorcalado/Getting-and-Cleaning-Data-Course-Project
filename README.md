@@ -12,16 +12,16 @@ Coursera.
 The original dataset was donated by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto and Xavier Parra, who made it 
 [available online](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
-Full citation as requested:
-> Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity
-> Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning,
-> ESANN 2013. Bruges, Belgium 24-26 April 2013.
-
 It consists of a human activity recognition (HAR) database built from the recordings of 30 subjects performing six different activities
 of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors. Additional processing was applied to the
 raw signal and is described in the files accompanying the data in the original dataset. 
 
 The original dataset comprised 10299 observations across 561 variables, besides the identification on the subject and activity perfomed.
+
+Full citation as requested by authors:
+> Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity
+> Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning,
+> ESANN 2013. Bruges, Belgium 24-26 April 2013.
 
 ## Creating the tidy datafile
 We downloaded the original database and unzipped the files. The observations came split into two groups: train and test. The train data had 70% of the total entries (21 of the 30 subjects) and was used as source for the main analysis; the other 30%, or 9 remaining subjects, were used for testing. Also, each set (train and test) had data stored in three different files: one for the measurements, another for the type of activity performed and a third for the subject. There was no common column between them, observations were match by position.
@@ -39,3 +39,12 @@ An R script called run_analysis.R has been included in this repository. It conta
 * Number of observations: 180
 * Number of variables: 68
 * Memory size: 106.776 bytes
+
+ $ fBodyAccMag-mean()         : num  -0.8618 -0.9478 -0.9854 -0.1286 0.0966 ...
+ $ fBodyAccMag-std()          : num  -0.798 -0.928 -0.982 -0.398 -0.187 ...
+ $ fBodyBodyAccJerkMag-mean() : num  -0.9333 -0.9853 -0.9925 -0.0571 0.0262 ...
+ $ fBodyBodyAccJerkMag-std()  : num  -0.922 -0.982 -0.993 -0.103 -0.104 ...
+ $ fBodyBodyGyroMag-mean()    : num  -0.862 -0.958 -0.985 -0.199 -0.186 ...
+ $ fBodyBodyGyroMag-std()     : num  -0.824 -0.932 -0.978 -0.321 -0.398 ...
+ $ fBodyBodyGyroJerkMag-mean(): num  -0.942 -0.99 -0.995 -0.319 -0.282 ...
+ $ fBodyBodyGyroJerkMag-std() : num  -0.933 -0.987 -0.995 -0.382 -0.392 ...
