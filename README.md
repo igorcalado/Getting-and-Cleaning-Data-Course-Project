@@ -35,7 +35,7 @@ At the end, the resulting data was called tidyHAR. It consists of 180 entries co
 An R script called run_analysis.R has been included in this repository. It contains all the code used to run the process described above. It also includes detailed step-by-step commentary on its functioning.
 
 ## Summary of dataset
-* Class: data.frame
+* Type: tabular data.
 * Number of observations: 180
 * Number of variables: 68
-* Memory size: 106.776 bytes
+* Memory size as object in R: 106.776 bytes as data frame.
