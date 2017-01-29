@@ -22,11 +22,16 @@ These signals were used to estimate variables of the feature vector for each pat
 ## Understanding the variables
 
 The following variables were then created, where the first letter stands for 'time' (t) or 'frequency' (f):
+
 tBodyAcc-XYZ
+
 tGravityAcc-XYZ
+
 tBodyAccJerk-XYZ
+
 tBodyGyro-XYZ
 tBodyGyroJerk-XYZ
+
 tBodyAccMag
 tGravityAccMag
 tBodyAccJerkMag
