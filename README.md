@@ -39,3 +39,4 @@ An R script called run_analysis.R has been included in this repository. It conta
 * Number of observations: 180
 * Number of variables: 68
 * Memory size as object in R: 106.776 bytes as data frame.
+* File size of tidyHAR.txt: 224.331 bytes.
